@@ -1,0 +1,9 @@
+Model,Test accuracy,Test loss
+"Adam, freeze 100%, with data augmentation",0.9166666865348816,0.3048219680786133
+"RMS Prop, freeze 100%, with data augmentation",0.8653846383094788,0.487845778465271
+"SGD, freeze 100%, with data augmentation",0.8525640964508057,0.5001843571662903
+"Adagrad, freeze 100%, with data augmentation",0.9038461446762085,0.3160366415977478
+"Adam, unfreeze 10%, with data augmentation",0.9679487347602844,0.23099663853645325
+"Adam, unfreeze 15%, with data augmentation",0.942307710647583,0.2082742601633072
+"Adam, unfreeze 20%, with data augmentation",0.9551281929016113,0.2827394902706146
+"Adam, unfreeze 25%, with data augmentation",0.9294871687889099,0.3334409296512604
