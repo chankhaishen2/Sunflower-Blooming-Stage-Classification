@@ -1,13 +1,14 @@
 # Sunflower-Blooming-Stage-Classification
-1. This repository contains the source code and raw data for sunflower blooming stage image classification using transfer learning using Inception V3, which itself is one part of a group project carried out by Loh Min Yi, Hneah Guey Ling, Mohammed Jubarah and Chan Khai Shen (me) as the coursework of the Multimodal Information Retrieval subject. I am fully responsible for the Inception V3 part.
+1. This repository contains the source code for sunflower blooming stage image classification using transfer learning using Inception V3, which itself is one part of a group project carried out by Loh Min Yi, Hneah Guey Ling, Mohammed Jubarah and Chan Khai Shen (me) as the coursework of the Multimodal Information Retrieval subject. I am fully responsible for the Inception V3 part.
 2. While the whole project includes a custom Convolutional Neural Network and transfer learning model using VGG-16, AlexNet and Inception V3, this repository only stores the source code for training and evaluating Inception V3, because this is the part that I am responsible for and has access to.
 3. The source code for developing, training, experimenting and testing the models is in "Train and experiment model.ipynb", whereas the source code for converting the best performing model to tensorflow.js compatible format is in "Convert model.ipynb".
+4. The original project does not contain the conversion of the model into tensorflow.js compatible format. This is my own extension to the project. 
 
 # Dataset
 1. The models are trained using 1076 self-collected images, which is splitted into training dataset (70%), validation dataset (15%) and test dataset (15%).
 2. The images are cropped and resized into square images with size of 224 pixels * 224 pixels and has 3 channels (Red, Blue, Green).
 3. The dataset classifies sunflower blooming stage into 4 classes, namely bud, partially bloom, fully bloom and wilt.
-4. The dataset is not included in this repository.
+4. The dataset is not included in this repository because the disclosure of the whole dataset needs the consent from all group members.
 
 # Model
 1. At the first few layers, the model has 3 random data augmentation layers to reduce overfitting. These layers are random horizontal flipping, random rotation and random contrast. This does not change the dataset size but lets the model sees a slightly different version of the dataset during training.
